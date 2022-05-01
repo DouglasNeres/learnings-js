@@ -20,7 +20,7 @@ document.write('Deseja receber um total de <strong>' + ganho.toLocaleString('pr-
 
 //Operadores teste. E outros testes no NodeJS.
 
-let obj1 = Number(prompt('Diga um número:'))
+/* let obj1 = Number(prompt('Diga um número:'))
 let obj2 = Number(prompt('Escolha outro número:'))
 let adição = obj1 + obj2
 let subtração = obj1 - obj2 
@@ -32,4 +32,12 @@ let potencia2 = obj2**2
 
 document.write(`A Adição dos seus números é igual a: ${adição}, a Subtração: ${subtração}, a Multiplicação: ${multiplicação}, a Divisão Real: ${divisãoReal}, a Divisão Inteira: ${divisãoInteira} o primeiro número ao quadrado: ${potencia1} e o segundo número ao quadrado: ${potencia2} !!`)
 
+ */
 
+/*--ESTUDOS DOM--*/
+let titulo = document.querySelector('.titulo')
+let a = document.getElementsByTagName('h3')
+let subtitulo = document.getElementById('subti')
+titulo.style.background = 'cyan'
+document.write('Execução: ', a.innerText = 'DOM <br>')
+document.write('Utilizando alguns conceitos DOM: ', subtitulo.innerText) 
