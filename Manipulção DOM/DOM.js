@@ -17,13 +17,15 @@ a.addEventListener('mouseout', sair)
 
 function clicar(){
     a.innerText = 'ÓTIMO!'
-    a.style.background = 'green'
+    a.style.background = 'cyan'
 }
 
 function entrar(){
     a.innerText = 'Bom?'
+    a.style.background = 'green'
 }
 
 function sair(){
     a.innerText = 'Ruim?'
+    a.style.background = 'gray'
 }

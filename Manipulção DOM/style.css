@@ -14,8 +14,9 @@ body{
 input {
     padding-left: 10px;
     width: 300px;
-    height: 33px;
+    height: 43px;
     border-radius: 10px;
+    box-shadow: 2px 2px 21px blue;
 }
 
 #area{
