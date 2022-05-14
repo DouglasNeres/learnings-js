@@ -36,7 +36,6 @@ function lampQuebrar() {
 }
 
 acender.addEventListener('click', lampOn)
-
 lampada.addEventListener('mouseover', lampTransicao)
 lampada.addEventListener('mouseleave', lampOff)
 apagar.addEventListener('click', lampOff)
