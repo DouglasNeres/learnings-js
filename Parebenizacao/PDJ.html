@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atenção...</title>
+
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Gruppo&family=Macondo&family=Montserrat:ital@1&family=Noto+Sans:ital,wght@0,400;1,300;1,400&family=Nunito:ital,wght@0,400;1,300&family=Oleo+Script+Swash+Caps&family=Poppins&family=Russo+One&family=Sarala:wght@400;700&family=Source+Code+Pro:wght@500&family=Ubuntu:ital,wght@1,300;1,400&display=swap');
+
+        body {
+            background-color: #161E54;
+            color: #fff;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .h1 {
+            margin-top: 100px;
+            -webkit-text-stroke: 0.9px rgb(0, 0, 0);
+            font-family: cursive;
+            color: rgb(255, 255, 255);
+            text-align: center;
+        }
+
+        img {
+            width: 270px;
+            height: 275px;
+        }
+
+        .foto {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 90px;
+
+        }
+
+        button {
+            border-radius: 10px;
+            padding: 14px 33px;
+            border: 0;
+            color: #000;
+            ;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background: linear-gradient(to right, #7eeee5, rgb(58, 169, 243));
+            cursor: pointer;
+            /* Animation button */
+            animation-name: botao;
+            animation-duration: 0.5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: ease-in-out;
+            box-shadow: 0 0 10px rgb(21, 146, 155);
+        }
+
+        .botao {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+        }
+
+        @keyframes botao {
+            0% {
+                transform: scale(1);
+            }
+
+            100% {
+                transform: scale(1.05);
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="h1">
+        <h1>Para Juliana Alves ...</h1>
+    </div>
+    <div class="foto">
+        <img src="img-presente.png" alt="Presentinho">
+    </div>
+    <div class="botao">
+        <button id="btn">ABRIR...</button>
+    </div>
+
+    <script>
+        const button = document.getElementById("btn")
+        button.addEventListener('click', clicar)
+
+        function clicar() {
+            return alert('PARABÉNS')
+        }
+
+
+    </script>
+
+</body>
+
+</html>
