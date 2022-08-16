@@ -6,7 +6,7 @@ function Acess(event) {
   
     if (senha == "rayninda") {
       alert("Acertoouuu❤❤❤❤❤❤❤!!");
-      window.location = "index.html";
+      window.location = "amostra.html";
     }
     else{
       alert("Errado, tente novamente!");
