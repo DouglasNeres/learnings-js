@@ -8,7 +8,7 @@
 .game-board{
     width: 100%;
     height: 500px;
-    border-bottom: 15px solid rgb(35, 160, 35);
+    border-bottom: 27px solid rgb(35, 160, 35);
     margin: 0 auto;
     position: relative;
     overflow: hidden;
@@ -30,12 +30,12 @@
 }
 
 .jump{
-    animation: puloMario 500ms ease-out;
+    animation: puloMario 550ms ease-out;
 }
 
 .clouds{
     position: absolute;
-    width: 550px;
+    width: 530px;
     animation: clouds 15s infinite linear;
     top: 0;
 }
@@ -55,10 +55,10 @@
         bottom: 0;
     }
     40%{
-        bottom: 200px;
+        bottom: 230px;
     }
     50%{
-        bottom: 180px;
+        bottom: 200px;
     }
     60%{
         bottom: 180px;
@@ -87,9 +87,9 @@
     color: rgb(107, 5, 5);
     box-shadow: 0px 0px 8px 3px #476875;
     border: 0;
-    width: 150px;
-    height: 40px;
-    border-radius: 10px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
     background: #8d998f;
     padding: 15px;
 }

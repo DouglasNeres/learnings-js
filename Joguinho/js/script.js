@@ -29,7 +29,6 @@ const loop = setInterval(() => {
         mario.style.marginLeft = '50px'
         
         clearInterval(loop)
-        alert('GAME OVER, TENTE NOVAMENTE!')
         const btn = document.querySelector("#refresh")
         btn.addEventListener('click', () => {
             location.reload()
