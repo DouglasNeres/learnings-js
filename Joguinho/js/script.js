@@ -20,17 +20,31 @@ const loop = setInterval(() => {
 
         pipe.style.animation = 'none'
         pipe.style.bottom = `${posicaoMario}px`
-    
+
         pipe.style.animation = 'none'
         pipe.style.bottom = `${posicaoMario}px`
-
+        
         mario.src = './imgs/game-over.png'
         mario.style.width = '75px'
         mario.style.marginLeft = '50px'
-    
+        
         clearInterval(loop)
+        alert('GAME OVER, TENTE NOVAMENTE!')
+        const btn = document.querySelector("#refresh")
+        btn.addEventListener('click', () => {
+            location.reload()
+        })
+        
     }
 
 }, 10)
+document.addEventListener('click', jump)
 
-document.addEventListener('keydown', jump)
+/*APLICANDO ENTRER AO BOTAO*/
+/* document.addEventListener('keypress', function(e){
+    if (e.key === "Enter") {
+        const btn = document.querySelector("#refresh")
+        btn.click()
+    }
+})
+ */
