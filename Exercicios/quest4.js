@@ -1,6 +1,16 @@
-//4 – Peça ao usuário para digitar várias idades. Exiba quantas pessoas são maior de idade (18 anos) e quantas são menores.
-let idade1 = Number(prompt('Digite a idade da Primeira pessoa:'))
-let idade2 = Number(prompt('Digite a idade da Segunda pessoa:'))
-let idade3 = Number(prompt('Digite a idade da Terceira pessoa:'))
-let idade4 = Number(prompt('Digite a idade da Quarta pessoa:'))
+let maior = 0;
+let menor = 0;
+while(true){
+    let entrada = prompt("Digite Idades dos Usuários e quando terminar envie 'break'!")
+    if(entrada=="break"){
+        break;
+    }
+    entrada = Number(entrada);
+    if(entrada>=18){
+        maior++;
+    }else{
+        menor++;
+    }
+}
 
+document.write(`${maior} maiores e ${menor} menores de 18 anos`);
