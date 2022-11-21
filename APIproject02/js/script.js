@@ -1,4 +1,4 @@
-function returnValue(content) {
+/* function returnValue(content) {
     if (!("error" in content)) {
         document.getElementById('rua').value = (content.logradouro)
         document.getElementById('complemento').value = (content.complemento)
@@ -30,7 +30,29 @@ function queryCEP(value) {
         }
     }
 }
-
     if (queryCEP === queryCEP.reload) {
         queryCEP = ''
     }
+ */
+
+    //Simple Code 
+    $("#cep").blur(function(e) {
+
+        let cep = this.value
+    
+        fetch(`https://viacep.com.br/ws/${cep}/json/`)
+            .then(response =>{
+                response.json()
+                    .then(data => mostrarDados(data))
+            })
+    
+            const mostrarDados = (result) =>{
+                for(const campo in result){
+    
+                    if (document.querySelector("#"+campo)) {
+                        document.querySelector("#"+campo).value = result[campo]
+                    }
+                    /* console.log(campo); */
+                }
+            }
+    })

@@ -13,14 +13,14 @@
 <body>
     <div class="main">
         <h1>Buscador CEP</h1>
-        <p>Após digitar o cep click fora da caixa</p>
+        <p>Após digitar o cep click fora da campo</p>
         <div class="cep">
             <input type="text" name="cep" id="cep" size="10" maxlength="9" onblur="queryCEP(this.value)"
                 placeholder="Digite seu CEP">
         </div>
         <form method="get">
             <label>RUA:</label>
-            <input type="text" name="rua" id="rua" placeholder="Sua Rua">
+            <input type="text" name="logradouro" id="logradouro" placeholder="Sua Rua">
 
             <label>COMPLEMENTO:</label>
             <input type="text" name="complemento" id="complemento" placeholder="Complemento">
@@ -46,7 +46,7 @@
             <label>SIAFI:</label>
             <input type="text" name="siafi" id="siafi" placeholder="Siafi">
 
-
+            <script src="https://code.jquery.com/jquery-3.6.1.min.js""></script>
         </form>
     </div>
 </body>
